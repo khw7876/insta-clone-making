@@ -1,6 +1,6 @@
 /*여기에는 데스트탑에 적용 할 css!!*/
 header {
-    height: 50px;
+    height: 60px;
     padding: 1rem;
     color: white;
     background: black;
@@ -17,7 +17,44 @@ header {
     margin-bottom: 70px;
 }
 
+.logo{
+    margin-top: 1%;
+    margin-left: 18%;
+    width :130px;
+    height :45px;
+}
 
+input {
+    margin-left: 140px;
+    background-repeat: no-repeat;
+    /*border: 1px solid #ccc;*/
+    padding: 5px 5px;
+    /*width: 120px;*/
+    border-radius: 10px;
+    border : 1px solid black;
+    width: 270px;
+    height: 40px;
+    background-color: #262626;
+    font-size : 17px;
+}
+
+input::-webkit-input-placeholder {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+    background-size: contain;
+    background-position: 1px center;
+    background-repeat: no-repeat;
+    text-align: left;
+    text-indent: 0;
+}
+
+.items{
+    margin-right: 19%;
+    margin-left: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .wrap {
     display: flex;
     width: 100%;
@@ -41,7 +78,8 @@ header {
     height: 1500px;
     border: 1px solid gray;
     /*margin-right: 30px;*/
-    margin-left: 300px;
+    /*margin-left: 300px;*/
+    margin-left: 19%;
 }
 .story {
     display: flex;
@@ -87,6 +125,28 @@ header {
         left: 0;
         right: 0;
     }
+    .main_story {
+
+    width: 40%;
+    height: 1500px;
+    border: 1px solid gray;
+    /*margin-right: 30px;*/
+    margin-left: 20%;
+}
 
 
+}
+@media (max-width : 700px){
+    .main_story {
+
+    width: 60%;
+    height: 1500px;
+    border: 1px solid gray;
+    /*margin-right: 30px;*/
+    margin-left: 20%;
+}
+
+    .sub{
+        display: none;
+    }
 }
