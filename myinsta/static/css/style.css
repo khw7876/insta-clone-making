@@ -15,6 +15,7 @@ header {
     right: 0;
     border-bottom: 1px solid gray;
     margin-bottom: 70px;
+    z-index: 3;
 }
 
 .logo {
@@ -68,6 +69,7 @@ input::-webkit-input-placeholder {
     flex-direction: row;
     justify-content: left;
     align-content: flex-start;
+    overflow: hidden;
     /*margin : 20px auto;*/
 
 }
@@ -78,8 +80,6 @@ input::-webkit-input-placeholder {
     width: 40%;
     height: 1500px;
     border: 1px solid gray;
-    /*margin-right: 30px;*/
-    /*margin-left: 300px;*/
     margin-left: 19%;
 }
 
@@ -89,9 +89,49 @@ input::-webkit-input-placeholder {
     height: 100px;
     background-color: black;
     border: 1px solid gray;
-
     margin: 40px auto;
+}
 
+.story_object {
+    width: 100%
+    position: relative;
+    display: flex;
+    overflow: auto;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+
+.story_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+}
+
+.one_story {
+    display: block;
+    width: 90%;
+    height: 70%;
+    /*flex-basis: 100px;*/
+}
+
+.storys_name {
+    width: 150%;
+    font-size: 16px;
+    color: white;
+    background-color: green;
 }
 
 .main {
@@ -230,20 +270,52 @@ input::-webkit-input-placeholder {
         margin-left: 20%;
     }
 
+    .logo {
+        margin-left: 180%;
+
+    }
+
+    .search {
+
+    }
+
+    .items {
+
+    }
+
 
 }
 
-@media (max-width: 700px) {
-    .main_story {
-
-        width: 60%;
-        height: 1500px;
-        border: 1px solid gray;
-        /*margin-right: 30px;*/
-        margin-left: 20%;
+@media (max-width: 1080px) {
+    .logo {
+        margin-left: 100%;
+    }
+    .main_story{
+        width : 56%;
     }
 
     .sub {
         display: none;
+
+    }
+
+    @media (max-width: 900px) {
+        .main_story {
+            width: 60%;
+            height: 1500px;
+            border: 1px solid gray;
+            /*margin-right: 30px;*/
+            margin-left: 20%;
+        }
+
+        .logo {
+            margin-left: 60%;
+        }
+
+        .items {
+
+        }
+
+
     }
 }
