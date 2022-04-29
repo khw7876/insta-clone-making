@@ -1,4 +1,8 @@
 /*여기에는 데스트탑에 적용 할 css!!*/
+
+*{
+    color : white;
+}
 header {
     height: 60px;
     padding: 1rem;
@@ -148,17 +152,59 @@ input::-webkit-input-placeholder {
     width: 100%;
     height: 5%;
     border: 1px solid gray;
+    display: flex;
+}
+.title_img{
+    width : 10%;
+    height: 100%;
+    background-color: green;
+}
+.title_name{
+    width: 80%;
+    height: 100%;
+    background-color: blue;
+    color: white;
+}
+.title_modal{
+    width:10%;
+    height: 100%;
+    background-color: gray;
 }
 .main_img{
     width: 95%;
     height: 60%;
     border: 1px solid gray;
     margin: 0px auto;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
-.main_like_icon{
+.slide{
+    width: auto;
+    height: 100%;
+    margin : 0px auto;
+}
+.main_carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    object-fit: cover;
+
+}
+
+.main_like_icon {
     width: 100%;
     height : 5%;
     border: 1px solid gray;
+    padding-left: 5%;
 }
 .main_introduce{
     width: 100%;
@@ -175,7 +221,23 @@ input::-webkit-input-placeholder {
     width: 100%;
     height : 5%;
     border: 1px solid gray;
+    display: flex;
     /*margin-bottom: 40px;*/
+}
+.main_post_symbol{
+    width: 10%;
+    height: 100%;
+    background-color: green;
+}
+.comment_post{
+    width: 80%;
+    height: 100%;
+    background-color: blue;
+}
+.post_botton{
+    width: 10%;
+    height: 100%;
+    background-color: gray;
 }
 
 .sub {
@@ -192,12 +254,64 @@ input::-webkit-input-placeholder {
 .mytitle {
     display: flex;
     width: 80%;
-    height: 100px;
+    height: 15%;
     border: 1px solid gray;
-    margin: 40px auto;
+    margin: 20px auto;
 
 }
+.mytitle_img{
+    width : 25%;
+    height: 100%;
+    border : 1px solid gray;
+}
+.mytitle_introduce{
+    width: 60%;
+    height: 100%;
+    border: 1px solid gray;
+}
+.mytitle_re_login{
+    width : 15%;
+    height: 100%;
+    border: 1px solid gray;
+}
 
+.suggest_comment{
+    display: flex;
+    width: 100%;
+    height: 7%;
+    border: 1px solid gray;
+}
+.sugget_comment_foryou{
+    width : 80%;
+    height: 100%;
+    border: 1px solid gray;
+    padding-left: 5%;
+}
+.suggest_show_all{
+    width: 20%;
+    height: 100%;
+    border: 1px solid blue;
+    font-size: 10px;
+}
+.suggested_friends{
+    width: 100%;
+    height : 70%;
+    border: 1px solid gray;
+}
+.suggested_friend{
+    width: 100%;
+    height: 20%;
+    border: 1px solid blue;
+}
+.suggested_friend_img{
+    width: :25%;
+    height: 100%;
+    border : 1px solid gray;
+}
+.suggested_friend_introduce{
+    width: 80%;
+    height: 100%;
+}
 /*direct message의 css*/
 .wrap2 {
     display: flex;
