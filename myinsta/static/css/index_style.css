@@ -1,0 +1,452 @@
+/*여기에는 데스트탑에 적용 할 css!!*/
+
+*{
+    color : white;
+}
+/*헤더부분이라서 모든 html에 공통 적용*/
+header {
+    height: 60px;
+    padding: 1rem;
+    color: white;
+    background: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid gray;
+    margin-bottom: 70px;
+    z-index: 3;
+}
+
+.logo {
+    margin-top: 1%;
+    margin-left: 250px;
+    width: 130px;
+    height: 45px;
+}
+
+input {
+    margin-left: 140px;
+    background-repeat: no-repeat;
+    /*border: 1px solid #ccc;*/
+    padding: 5px 5px;
+    /*width: 120px;*/
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 270px;
+    height: 40px;
+    background-color: #262626;
+    font-size: 17px;
+    color: white;
+}
+
+input::-webkit-input-placeholder {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+    background-size: contain;
+    background-position: 1px center;
+    background-repeat: no-repeat;
+    text-align: left;
+    text-indent: 0;
+}
+
+.items {
+    margin-right: 19%;
+    margin-left: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*여기부터는 index html*/
+.wrap1 {
+    display: flex;
+    width: 100%;
+    height: 2000px;
+    background-color: #121212;
+    /*flex-wrap: wrap;*/
+
+    padding-top: 100px;
+    flex-direction: row;
+    justify-content: left;
+    align-content: flex-start;
+    overflow: hidden;
+    /*margin : 20px auto;*/
+
+}
+
+/*main과, story를 담은 div*/
+.main_story {
+
+    width: 40%;
+    height: 1500px;
+    border: 1px solid gray;
+    margin-left: 19%;
+    background-color: black;
+}
+/*story를 감싸주는 div*/
+.story {
+    width: 100%;
+    height: 100px;
+    border: 1px solid blue;
+    background-color: black;
+    overflow: auto;
+}
+/*flex로 스토리 박스를 옆으로 정렬을 해줌*/
+.story_flex_box {
+    display: flex;
+    width : 660px;
+    height: 100%;
+    /*overflow: auto;*/
+
+    /*flex-direction: column;*/
+}
+/*한명 한명의 스토리를 감싸주는 div*/
+.story_box {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    height: 100%;
+    /*position: relative;*/
+}
+/*스토리를 올린 사람의 이름*/
+.story_name {
+    width: 100%;
+    height: 100%;
+    /*background-color: green;*/
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    /*vertical-align: text-bottom;*/
+    /*position: absolute;*/
+    margin-top: 10%;
+
+}
+/*스토리 이미지 중 직접적인 이미지와 circle을 감싼 div*/
+.story_img {
+    margin-top: 10%;
+    position: relative;
+    height: 200%;
+}
+/*동그라미 안에 들어가는 직접적인 스토리 이미지*/
+.story_in_circle {
+    position: absolute;
+}
+/*스토리 이미지를 동그랗게 보여줄 동그라미를 품은 네모*/
+.circle {
+    position: absolute;
+}
+/*각각의 게시물 하나를 감싸는 div, 여기서 해당 게시물 전체의 height를 조절*/
+.main {
+    width: 90%;
+    height: 700px;
+    border: 1px solid gray;
+    margin: 40px auto;
+    color: white;
+}
+/*게시물을 올린 사람의 이름, 타이틀*/
+.main_title{
+    width: 100%;
+    height: 5%;
+    border: 1px solid gray;
+    display: flex;
+}
+/*게시물 title 안에서 올린 사람의 프로필 사진*/
+.title_img{
+    width : 10%;
+    height: 100%;
+    background-color: green;
+}
+/*게시물의 제목*/
+.title_name{
+    width: 80%;
+    height: 100%;
+    background-color: blue;
+    color: white;
+}
+/*게시물의 우측 모달을 여는 버튼 div*/
+.title_modal{
+    width:10%;
+    height: 100%;
+    background-color: gray;
+}
+/*게시물의 carousel이 담길 부분*/
+.main_img{
+    width: 95%;
+    height: 60%;
+    border: 1px solid gray;
+    margin: 0px auto;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+/*carousel의 슬라이드*/
+.slide{
+    width: auto;
+    height: 100%;
+    margin : 0px auto;
+}
+/*carousel 전체를 담아냄, 이미지의 하위*/
+.main_carousel {
+    width: 100%;
+    height: 100%;
+}
+/*carousel 안에 들어가는 이미지의 실질적인 크기를 관장*/
+.carousel-inner {
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    width: 60%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: ;
+
+
+    object-fit: cover;
+
+}
+/*게시물의 좋아요 등을 담아내는 아이콘, 버튼형식으로 동작해야함*/
+.main_like_icon {
+    width: 100%;
+    height : 5%;
+    border: 1px solid gray;
+    padding-left: 5%;
+}
+/*좋아요의 개수, 게시물에 대한 설명이 들어감. 너무길다면 <..더보기> 사용*/
+.main_introduce{
+    width: 100%;
+    height : 10%;
+    border: 1px solid gray;
+/*    높이는 인스턴스에 따라 달라짐*/
+}
+/*게시물에 달려있는 댓글들을 담는 div*/
+.main_comments{
+    width: 100%;
+    height : 15%;
+    border: 1px solid gray;
+}
+/*게시물에 내가 댓글을 다는 div*/
+.main_post{
+    width: 100%;
+    height : 5%;
+    border: 1px solid gray;
+    display: flex;
+    /*margin-bottom: 40px;*/
+}
+/*댓글을 다는 엔진 중 맨 왼쪽 이모티콘*/
+.main_post_symbol{
+    width: 10%;
+    height: 100%;
+    background-color: green;
+}
+/*실질적인 댓글을 입력하는 창, 부트스트랩을 사용해야 함*/
+.comment_post{
+    width: 80%;
+    height: 100%;
+    background-color: blue;
+}
+/*댓글을 작성하는 버튼을 담는 div*/
+.post_botton{
+    width: 10%;
+    height: 100%;
+    background-color: gray;
+}
+/*실제 버튼의 css*/
+.post_botton1{
+    width: 100%;
+    height: 100%;
+    color : blue;
+}
+/*우측에 나타나는 나의 프로필, 추천 등을 담는 총 div*/
+.sub {
+    width: 20%;
+    height: 500px;
+    border: 1px solid gray;
+    position: fixed;
+    right: 18%;
+    display: block;
+    background-color: black;
+
+}
+/*나의 프로필을 담아내는 총 div*/
+.mytitle {
+    display: flex;
+    width: 80%;
+    height: 15%;
+    border: 1px solid gray;
+    margin: 20px auto;
+
+}
+/*나의 프로필 div중 왼쪽에 들어가는 나의 프로필*/
+.mytitle_img{
+    width : 25%;
+    height: 100%;
+    border : 1px solid gray;
+}
+/*나의 닉네임, 이름을 포함하는 div*/
+.mytitle_introduce{
+    width: 60%;
+    height: 100%;
+    border: 1px solid gray;
+}
+/*나의 인스타 닉네임*/
+.mytitle_introduce_instaname{
+    font-size: 15px;
+}
+/*나의 이름*/
+.mytitle_introduce_my_realname{
+    font-size: 12px;
+    color : #969696;
+}
+/*계정 전환*/
+.mytitle_re_login{
+    width : 15%;
+    height: 100%;
+    border: 1px solid gray;
+}
+/*추천 친구의 총 div*/
+.suggest_comment{
+    display: flex;
+    width: 100%;
+    height: 7%;
+    border: 1px solid gray;
+}
+/*회원님을 위한 추천 코멘트*/
+.sugget_comment_foryou{
+    width : 80%;
+    height: 100%;
+    border: 1px solid gray;
+    padding-left: 5%;
+}
+/*모두보기 버튼 (버튼작동)*/
+.suggest_show_all{
+    width: 20%;
+    height: 100%;
+    border: 1px solid blue;
+    font-size: 10px;
+}
+/*소개된 친구들 전체를 담는 div(상위는 sub)*/
+.suggested_friends{
+    width: 100%;
+    height : 50%;
+    border: 1px solid gray;
+
+}
+/*소개된 친구 개개인의 정보 박스를 담는 div*/
+.suggested_friend{
+    width: 100%;
+    height: 20%;
+    border: 1px solid blue;
+    display: flex;
+}
+/*소개된 친구의 프로필 사진*/
+.suggested_friend_img{
+    width: 20%;
+    height: 100%;
+    border : 1px solid gray;
+}
+/*소개된 친구의 닉네임과 소개 정보를 담는 div*/
+.suggested_friend_introduce{
+    width: 55%;
+    height: 100%;
+    border : 1px solid gray;
+}
+/*소개된 친구의 닉네임*/
+.suggested_friend_introduce_name{
+    font-size : 15px;
+}
+/*~~를 팔로우 하는 등의 메세지*/
+.suggested_friend_introduce_introduce{
+    color : #969696;
+    font-size: 12px;
+}
+/*추천된 친구에게 팔로우를 하는 버튼*/
+.suggested_friend_follow{
+    width: 25%;
+    height: 100%;
+    border : 1px solid blue;
+}
+/*푸터*/
+.footer{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: blue;*/
+    /*border : 1px solid blue;*/
+}
+/*direct message의 css*/
+
+/*여기에는 모바일에 적용 할 css!!*/
+@media (max-width: 1519px) {
+    header {
+        padding: 1rem;
+        top: 0;
+        /* width: 100% */
+        left: 0;
+        right: 0;
+    }
+
+    .main_story {
+
+        width: 40%;
+        height: 1500px;
+        border: 1px solid gray;
+        /*margin-right: 30px;*/
+        /*background-color: black;*/
+        margin-left: 20%;
+    }
+
+    .logo {
+        margin-left: 180%;
+
+    }
+
+    .search {
+
+    }
+
+    .items {
+
+    }
+
+
+}
+
+@media (max-width: 1080px) {
+    .logo {
+        margin-left: 100%;
+    }
+
+    .main_story {
+        width: 56%;
+    }
+
+    .sub {
+        display: none;
+
+    }
+
+    @media (max-width: 900px) {
+        .main_story {
+            width: 60%;
+            height: 1500px;
+            border: 1px solid gray;
+            /*margin-right: 30px;*/
+            margin-left: 20%;
+        }
+
+        .logo {
+            margin-left: 60%;
+        }
+
+        .items {
+
+        }
+
+
+    }
+}

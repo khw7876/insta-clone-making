@@ -1,0 +1,232 @@
+/*여기에는 데스트탑에 적용 할 css!!*/
+
+*{
+    color : white;
+}
+/*헤더부분이라서 모든 html에 공통 적용*/
+header {
+    height: 60px;
+    padding: 1rem;
+    color: white;
+    background: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid gray;
+    margin-bottom: 70px;
+    z-index: 3;
+}
+
+.logo {
+    margin-top: 1%;
+    margin-left: 250px;
+    width: 130px;
+    height: 45px;
+}
+
+input {
+    margin-left: 140px;
+    background-repeat: no-repeat;
+    /*border: 1px solid #ccc;*/
+    padding: 5px 5px;
+    /*width: 120px;*/
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 270px;
+    height: 40px;
+    background-color: #262626;
+    font-size: 17px;
+    color: white;
+}
+
+input::-webkit-input-placeholder {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+    background-size: contain;
+    background-position: 1px center;
+    background-repeat: no-repeat;
+    text-align: left;
+    text-indent: 0;
+}
+
+.items {
+    margin-right: 19%;
+    margin-left: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*direct message의 css*/
+/*페이지 전체를 담는 div*/
+.wrap2 {
+    display: flex;
+    width: 100%;
+    height: 753px;
+    background-color: #121212;
+    flex-wrap: nowrap;
+    padding-top: 100px;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    /*align-content: flex-start;*/
+    /*margin : 20px auto;*/
+}
+
+/*좌측 친구목록 전체를 담는 div*/
+.friends_list {
+    width: 25%;
+    height: 600px;
+    border: 1px solid gray;
+    overflow: hidden;
+    /*overflow: auto;*/
+    /*margin-right: 30px;*/
+    /*margin-left: 300px;*/
+    /*margin-left: 50%;*/
+}
+/*나의 인스타 닉네임을 담고는 맨위에 div*/
+.my_message {
+    /*display: block;*/
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border: 1px solid gray;
+
+    /*margin: 40px auto;*/
+
+}
+/*메시지창 맨 위 나의 닉네임, 화살표*/
+.my_name {
+    height: 100%;
+    color: white;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    /*background-color: green;*/
+}
+
+/*나와 메세지를 할 친구들을 담는 전체 div*/
+.my_friends {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+
+}
+
+/*친구목록 개개인의 창*/
+.friend {
+    width: 100%;
+    height: 90px;
+    border: 1px solid gray;
+    /*margin: 40px auto;*/
+}
+/*우측에 직접적인 메세지창을 담은 div*/
+.direct_msg {
+    width: 40%;
+    height: 600px;
+    border: 1px solid gray;
+    /*position: fixed;*/
+    /*right: 10%;*/
+    display: block;
+    background-color: black;
+
+}
+/*메세지창 안에 있는 화살표 아이콘*/
+.chat_icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*"내 메세지 를 표현하는 P태그*/
+.comment {
+    font-size: 30px;
+    color: white;
+}
+/*그 아래 친구나 그룹에~~~를 표현하는 P태그*/
+.comment2 {
+    font-size: 15px;
+    color: gray;
+}
+
+/*여기에는 모바일에 적용 할 css!!*/
+@media (max-width: 1519px) {
+    header {
+        padding: 1rem;
+        top: 0;
+        /* width: 100% */
+        left: 0;
+        right: 0;
+    }
+
+    .main_story {
+
+        width: 40%;
+        height: 1500px;
+        border: 1px solid gray;
+        /*margin-right: 30px;*/
+        /*background-color: black;*/
+        margin-left: 20%;
+    }
+
+    .logo {
+        margin-left: 180%;
+
+    }
+
+    .search {
+
+    }
+
+    .items {
+
+    }
+
+
+}
+
+@media (max-width: 1080px) {
+    .logo {
+        margin-left: 100%;
+    }
+
+    .main_story {
+        width: 56%;
+    }
+
+    .sub {
+        display: none;
+
+    }
+
+    @media (max-width: 900px) {
+        .main_story {
+            width: 60%;
+            height: 1500px;
+            border: 1px solid gray;
+            /*margin-right: 30px;*/
+            margin-left: 20%;
+        }
+
+        .logo {
+            margin-left: 60%;
+        }
+
+        .items {
+
+        }
+
+
+    }
+}
