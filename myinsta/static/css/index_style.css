@@ -84,7 +84,7 @@ input::-webkit-input-placeholder {
 /*main과, story를 담은 div*/
 .main_story {
     width: 40%;
-    height: 1500px;
+    height: 3100px;
     /*border: 1px solid gray;*/
     margin-left: 19%;
     background-color: black;
@@ -233,7 +233,9 @@ input::-webkit-input-placeholder {
     font-size: 14px;
     font-weight: bold;
 }
-
+.modal_main:hover{
+    cursor: pointer;
+}
 #my_modal {
     display: none;
     width: 400px;
@@ -635,6 +637,16 @@ input::-webkit-input-placeholder {
 
         }
 
+
+    }
+    @media (max-width: 700px) {
+        .search{
+            display: none;
+        }
+        .main_story{
+            width: 90%;
+            margin: 0px auto;
+        }
 
     }
 }
